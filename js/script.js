@@ -16,9 +16,8 @@ let reveal = document.querySelector(".number");
 let bodyEl = document.querySelector("body");
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-console.log(secretNumber);
-let currentScore = 20,
-  highScore = 0;
+let currentScore = 20;
+let highScore = 0;
 
 const displayMessage = function (msg) {
   document.querySelector(".message").textContent = msg;
@@ -27,7 +26,6 @@ const displayMessage = function (msg) {
 document.querySelector(".check").addEventListener("click", function () {
   // empty string will be converted to 0
   const gussedNumber = Number(document.querySelector(".guess").value);
-  console.log(gussedNumber);
 
   // when there is no input
   if (!gussedNumber) {

@@ -23,6 +23,7 @@ body {
   line-height: 1;
   font-weight: 400;
   position: relative;
+  height: 100vh;
 
   background-color: #333;
   color: #fff;
@@ -160,4 +161,19 @@ h1 {
   height: 100vh;
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+/* body background for correct guess */
+.correct-guess {
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.scale-reveal {
+  width: 30%;
+  font-size: 7.4rem;
+  font-weight: 700;
+}
+
+.lose-game {
+  background: linear-gradient(to bottom right, #41000f, #d80032);
 }

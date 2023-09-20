@@ -33,7 +33,7 @@ document.querySelector(".check").addEventListener("click", function () {
   }
   // when player wins
   else if (gussedNumber === secretNumber) {
-    displayMessage("🎉 Correct - u did it!");
+    displayMessage("🎉 Wow, u did it!");
     reveal.textContent = secretNumber;
 
     bodyEl.classList.add("correct-guess");
@@ -55,7 +55,7 @@ document.querySelector(".check").addEventListener("click", function () {
     }
     // when player loses the game
     else {
-      displayMessage("💥 You lost the game!");
+      displayMessage("Sorry, u lost the game!");
       document.querySelector(".score").textContent = 0;
       bodyEl.classList.add("lose-game");
     }
